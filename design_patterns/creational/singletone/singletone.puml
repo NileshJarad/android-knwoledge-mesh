@@ -1,0 +1,18 @@
+@startuml
+Singleton <|-- Singleton
+
+class Singleton{
+    - {static} instance
+    - Singleton()
+    + getInstance()
+}
+
+note left of Singleton::instance
+  This is a static member.
+end note
+
+note left of Singleton::getInstance()
+  In a multi-threaded application, this method,
+  should take care of synchronization
+end note
+@enduml
