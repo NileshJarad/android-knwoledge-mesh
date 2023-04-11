@@ -3,7 +3,7 @@
 #### Singleton is creation design pattern. It ensures that you have only one instance.It is widely used design pattern.
 
 
-#### Steps to create Singleton
+### Steps to create Singleton
 1. Create private constructor for the class
 2. Create static method for that will call the private constructor and save that in static instance. Whenever in feature we call static method it should return the previously cached(stored) object.
 
@@ -12,15 +12,15 @@
 1. Singleton has same pros and cons as global variables. It breaks modularity and Single Responsibility Principle.
 2. Most of limitation comes with while creating the unit test
 
-#### UML
+### UML
 
 [PlantUML for Singleton pattern](https://www.plantuml.com/plantuml/uml/TOwnKe8n48JxFCMMEX8VWB6WfTONE9E3PBnScEHIAFBkvaS6i70cnMPdzzlRTADceuXxpReNjgfu-VOUrwzpGQZtct5q0E1nd5NBuOIiKsdWYtyDFZoUdIVisRQNpFHEpcarXl3EK7Ut_7fzHtfBkMC-mkyC2fTtRi-EDMBf_q_vEmTi5OGonBAtr9WYHz3X83bCSDKLRDagRAd6rSptL8T467qm0ZLUyFrJGsfLyzUvStV5PifHv0S0)
 
 ![Alt text](http://www.plantuml.com/plantuml/png/TOsnKiKW44LxlkAMEeeVyCRYjQdr1v1i4aPOCh0fDERVtIIEQF4OYkLozjnh5LTaIT6y11uZIMOyVrcBtwSnFhfQMx0QwB5OTLM2tn1O9_PqvWsykp-I1umatG-ZsMOCPo546WHvQFpbyiVqEeKAlGvd3HAbDofFXhZ7ld_RyhyEw5WjQOaIh4o5N4yzt3p7u5MS-L4HSUy4xmhjglh1VYgPm-VntnglEYqfVWC0 "a title")
 
+----
 
-
-#### Java code
+### Java code
 
 ```
 public final class Singleton {
