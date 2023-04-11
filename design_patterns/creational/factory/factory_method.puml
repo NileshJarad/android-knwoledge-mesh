@@ -1,0 +1,40 @@
+@startuml
+Product <|-- ConcreteProduct
+Creator <|-- ConcreteCreator
+
+ConcreteCreator - ConcreteProduct : Creates >
+
+
+interface Product<<interface>>{
+ productMethod()
+}
+
+
+class ConcreteProduct{
+ productMethod()
+
+}
+
+
+abstract Creator <<abstract>>{
+ factoryMethod()
+}
+
+
+class ConcreteCreator{
+ factoryMethod()
+
+}
+
+
+note right of ConcreteProduct::productMethod
+  This is the implementation of the abstract method from
+  Product interface/ abstract class that returns <b>ConcreteProduct
+end note
+
+note left of ConcreteCreator::factoryMethod()
+  This is the implementation of the abstract method from
+  Creator interface/ abstract class
+  It creates an actual object of the product.
+end note
+@enduml

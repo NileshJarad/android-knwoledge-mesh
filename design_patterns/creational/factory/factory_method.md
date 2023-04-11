@@ -1,10 +1,10 @@
 # Factory method
 
-#### Factory is Creational design pattern. It uses factory method to deal object creation without having to specify the actual class of the object that will be created.
-#### A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.
-#### The Factory Method Pattern is also known as  Virtual Constructor.
-#### Adheres to Open closed principle.
-#### It heavily relies on inheritance
+1. **Factory is Creational design pattern. It uses factory method to deal object creation without having to specify the actual class of the object that will be created.**
+2. **A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate.**
+3. **The Factory Method Pattern is also known as  Virtual Constructor.**
+4. **Adheres to Open closed principle.**
+5. **It heavily relies on inheritance**
 
 
 
@@ -70,8 +70,8 @@ Product abstract class
 ```agsl
 abstract class Plan {
     private val baseRate = 100f
-    fun getPlanDetails() {
-        print("Plan details rate =${baseRate + getRate()}")
+    fun getPlanDetails(): Float {
+        return baseRate + getRate()
     }
 
     abstract fun getRate(): Float
@@ -98,6 +98,23 @@ class InstitutionalPlan : Plan() {
     override fun getRate(): Float {
         return 600f
     }
+}
+```
+
+Factory Utility
+
+```agsl
+class ByTypePlanFactory : PlanFactory() {
+    override fun getPlan(plan: PlansEnum): Plan? {
+        return when (plan) {
+            PlansEnum.Domestic -> DomesticPlanCreator().createPlan()
+            PlansEnum.Commercial -> CommercialPlanCreator().createPlan()
+            PlansEnum.Institutional -> InstitutionalPlanCreator().createPlan()
+            else -> null
+        }
+
+    }
+
 }
 ```
 
