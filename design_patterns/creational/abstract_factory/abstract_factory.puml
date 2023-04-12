@@ -1,0 +1,62 @@
+@startuml
+ConcreteProductB1 --|> ProductB : inherits
+ProductB <|-- ConcreteProductB2 : inherits
+
+ConcreteFactory1 --|> AbstractFactory : inherits
+AbstractFactory <|-- ConcreteFactory2 : inherits
+
+ConcreteProductA1 --|> ProductA : inherits
+ProductA <|-- ConcreteProductA2 : inherits
+
+
+
+ConcreteFactory1 -left--- ConcreteProductB1 : Creates product B1 >
+ConcreteFactory1 -right--- ConcreteProductA1 : Creates product A1 >
+
+ConcreteFactory2 -left--- ConcreteProductB2 : Creates product B2 >
+ConcreteFactory2 -right--- ConcreteProductA2 : Creates product A2 >
+
+
+interface ProductA <<interface>>{
+ productA()
+}
+
+
+class ConcreteProductA1{
+ productA()
+}
+
+class ConcreteProductA2{
+ productA()
+}
+
+
+
+interface AbstractFactory <<interface>>{
+ createProductA()
+ createProductB()
+}
+
+class ConcreteFactory1{
+ createProductA()
+ createProductB()
+}
+
+class ConcreteFactory2{
+ createProductA()
+ createProductB()
+}
+
+interface ProductB <<interface>>{
+ productB()
+}
+
+
+class ConcreteProductB1{
+ productB()
+}
+
+class ConcreteProductB2{
+ productB()
+}
+@enduml
