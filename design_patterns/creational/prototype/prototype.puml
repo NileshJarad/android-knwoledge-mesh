@@ -1,0 +1,22 @@
+@startuml
+Prototype <|... ConcretePrototype
+
+interface Prototype <<interface>> {
++{abstract} clone() : Prototype
+}
+
+class ConcretePrototype{
+- field1
+- field2
+
++clone() : Prototype
+}
+note right of Prototype::clone
+  This is a prototype method.
+end note
+
+note right of ConcretePrototype::clone
+  It implements the clone method.
+  It copies the original object to clone the object
+end note
+@enduml
