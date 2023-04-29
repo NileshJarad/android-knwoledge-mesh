@@ -30,6 +30,7 @@
 
 ### Behavioral design pattern
 1. [Strategy](design_patterns/behavioral/strategy/strategy.md)
+2. [Observer](design_patterns/behavioral/observer/observer.md)
 ---
 
 ## System Design
