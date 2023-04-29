@@ -3,12 +3,12 @@
 - **Is a Behavioral design pattern that allows you to define a family of interchangeable algorithms, encapsulate each one as an object, and make them interchangeable at runtime.**
 
 
-### Steps to create factory method
+### Steps to create strategy method
 
 1. **Strategy** : Defines an interface of operations to create strategy
 2. **Concrete Strategy** : Implement the operation to create the concrete strategy
 3. **Context/ Base** : Define a base for inheritance
-4. **Client**  : Client code to decide the specific stragey to implement
+4. **Client**  : Client code to decide the specific strategy to implement
 
 
 ### Pros

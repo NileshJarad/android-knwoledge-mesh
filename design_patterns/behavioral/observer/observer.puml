@@ -1,0 +1,22 @@
+@startuml
+Observer <|.. ConcreteObserver
+Subject -right-> Observer: observers
+
+
+class Subject{
+ - var observers: List<Observer>
+
+ fun addObserver(observer: Observer)
+ fun removeObserver(observer: Observer)
+ fun notifyObservers()
+}
+
+interface Observer<<interface>>{
+  fun observe()
+}
+
+
+class ConcreteObserver{
+ fun observe(){...}
+}
+@enduml
