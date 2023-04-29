@@ -1,8 +1,25 @@
 # android-knowledge-mesh
 
+## Data Structure
 
+1. [Tree](data_structure/tree/tree.md)
+
+---
+
+## SOLID Principal
+
+1. [Single Responsibility Principal](solid_principal/single_responsibility_principal.md)
+2. [Open Closed Principal](solid_principal/open_closed_principal.md)
+3. [Liskov Substitution Principal](solid_principal/liskov_substitution_principal.md)
+4. [Interface Segregation Principal](solid_principal/interface_segregation_principal.md)
+5. [Dependency Inversion Principal](solid_principal/dependency_inversion_principal.md)
+
+---
 
 ## Design patterns
+
+[Class Diagram to UML representation](design_patterns/class_uml/class_uml_relationship.md) 
+
 ### Creational design pattern
 
 1. [Singleton](design_patterns/creational/singletone/singletone.md)
@@ -13,3 +30,14 @@
 
 ### Behavioral design pattern
 1. [Strategy](design_patterns/behavioral/strategy/strategy.md)
+---
+
+## System Design
+
+### LLD(Low level design)
+
+1. Library Management
+    1. [Requirement](system_design/lld/library_management/requirment.md)
+    2. [Use case and class diagram](system_design/lld/library_management/usercase_class_diagram.md)
+    3. [Code](system_design/lld/library_management/code.md)
+   
