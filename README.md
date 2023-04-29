@@ -11,3 +11,5 @@
 4. [Builder](design_patterns/creational/builder/builder.md)
 5. [Prototype](design_patterns/creational/prototype/prototype.md)
 
+### Behavioral design pattern
+1. [Strategy](design_patterns/behavioral/strategy/strategy.md)

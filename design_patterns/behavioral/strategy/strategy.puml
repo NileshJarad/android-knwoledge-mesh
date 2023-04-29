@@ -1,0 +1,32 @@
+@startuml
+Strategy <|.. ConcreteStrategy1
+Strategy <|.. ConcreteStrategy2
+Base -right-> Strategy: Has a
+
+Client -up--|> Base
+
+class Base{
+ - var strategy: Strategy
+ fun setStrategy(strategy: Strategy)
+}
+
+interface Strategy<<interface>>{
+  fun strategy()
+}
+
+
+class ConcreteStrategy1{
+ fun strategy(){...}
+}
+
+class ConcreteStrategy2{
+ fun strategy(){...}
+}
+
+note left of Client
+  <b>Client decides which strategy to use
+
+  val strategy = ConcreteStrategy1()
+  this.setStrategy(strategy)
+end note
+@enduml
