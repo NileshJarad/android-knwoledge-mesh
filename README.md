@@ -3,6 +3,7 @@
 ## Data Structure
 
 1. [Array](data_structure/array/array.md)
+2. [Stack](data_structure/stack/stack.md)
 2. [Tree](data_structure/tree/tree.md)
 
 ---
