@@ -1,5 +1,15 @@
 # Android-knowledge-mesh
 
+## GIT
+1. [Clone](/git/git.md#clone)
+2. [Status](/git/git.md#status)
+3. [Checkout](/git/git.md#checkout)
+4. [Changes and Commit](/git/git.md#changes-and-commit)
+5. [Push](/git/git.md#Push)
+6. [Log](/git/git.md#Log)
+7. [History re-write](/git/git.md#History-re-write)
+8. [Clean up files](/git/git.md#Clean-up-files)
+
 ## Data Structure
 
 1. [Array](data_structure/array/array.md)
