@@ -84,8 +84,10 @@
    - Socket connection
    - Server Side Event (SSE)
    - Auth refresh tokens
-8. Android Jetpack
-9. Compose
+8. Security 
+   - SSL pining  
+9. Android Jetpack
+10. Compose
 
 
    
