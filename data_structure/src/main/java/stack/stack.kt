@@ -1,6 +1,6 @@
 fun main() {
 
-    val stack = Stack()
+    val stack = Stack<Int>()
     stack.push(4)
     val peekElement = stack.peek()
     println("Top of stack is $peekElement")
@@ -14,41 +14,41 @@ fun main() {
 
 }
 
-fun Stack.printStack(){
+fun <T> Stack<T>.printStack() {
     println("\nStack elements :")
     stk.reversed().forEach {
         print("$it \t")
     }
 }
 
-class Stack {
-    val stk = ArrayList<Int>()
+class Stack<T> {
+    val stk = ArrayList<T>()
     var top = -1
 
-    fun push(value: Int) {
+    fun push(value: T) {
         stk.add(value)
         top++
     }
 
-    fun pop(): Int {
-        if(!isEmpty()) {
+    fun pop(): T {
+        if (!isEmpty()) {
             val poppedElement = stk.removeAt(top)
             top--
             return poppedElement
-        }else{
+        } else {
             throw RuntimeException("Stack is empty")
         }
     }
 
-    fun peek(): Int {
-        if(!isEmpty()){
+    fun peek(): T {
+        if (!isEmpty()) {
             return stk[top]
-        }else{
+        } else {
             throw RuntimeException("Stack is empty")
         }
     }
 
-    fun isEmpty(): Boolean{
+    fun isEmpty(): Boolean {
         return top < 0
     }
 }

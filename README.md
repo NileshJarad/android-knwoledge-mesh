@@ -12,10 +12,10 @@
 
 ## Data Structure
 
-1. [Array](data_structure/array/array.md)
-2. [Stack](data_structure/stack/stack.md)
-3. [Tree](data_structure/tree/tree.md)
-4. [Graph](data_structure/graph/graph.md)
+1. [Array](data_structure/src/main/java/array/array.md)
+2. [Stack](data_structure/src/main/java/stack/stack.md)
+3. [Tree](data_structure/src/main/java/tree/tree.md)
+4. [Graph](data_structure/src/main/java/graph/graph.md)
 
 ---
 

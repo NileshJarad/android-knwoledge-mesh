@@ -51,6 +51,13 @@ Tree is hierarchical (Non-Linear) data structure.
 
 
 ## Types of tree
+- Binary tree
+- Binary search tree
+- AVL tree
+- B tree
+- B+ tree
+- Heap tree
+- Red Black tree
 
 
 ## Tree traversal
