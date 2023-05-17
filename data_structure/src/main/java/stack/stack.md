@@ -31,4 +31,4 @@
 ### Question for the Stack
 - [Implement stack using list](stack.kt)
 - [Reverse string using stack](reverse_string.kt)
-- [Reverse string word using stack](reverse_string_words.kts)
+- [Reverse string word using stack](reverse_string_words.kt)
