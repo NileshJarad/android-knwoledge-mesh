@@ -1,6 +1,33 @@
 # Graph
 Network of node(vertex) and edges(connection)
 
+
+---
+
+### Graph Terminology
+- **Degree of Node**
+  - Number of edges connected to node is degree of that node.
+  - In an undirected graph, The degree of a node is equal to the number of edges incident to that node.
+    - There are two types of degrees commonly considered:
+      - **In-degree:** In a directed graph, the in-degree of a node is the number of incoming edges to that node. It represents the number of edges pointing towards the node. 
+      - **Out-degree:** In a directed graph, the out-degree of a node is the number of outgoing edges from that node. It represents the number of edges originating from the node
+        
+- **Example**
+  ```agsl
+         A --- B
+        /       \
+       D         C
+        
+    ```
+  1. Node A has a degree of 2 because it is connected to nodes B and D.
+      
+  2. Node B has a degree of 2 because it is connected to nodes A and C.
+    
+  3. Node C has a degree of 1 because it is connected to node B.
+      
+  4. Node D has a degree of 1 because it is connected to node A.
+      
+
 ---
 ### Types of graph
 - **Undirected Graph**
@@ -30,6 +57,17 @@ Network of node(vertex) and edges(connection)
     C  1  0  0  1
     D  0  1  1  0
     ```
+  **Advantage** 
+  1. Simplicity: Edge representation is simple. Uses 2D matrix
+  2. Efficient edge queries: Checking edge takes **O(1)** time.
+  3. Suitable for dense graph
+ 
+  **Disadvantage**
+  1. Space complexity: Matrix requires **O(V^2)** space.
+  2. Inefficient for the sparse graph.
+
+---
+
 - **Adjacency List**:
   - An adjacency list represents a graph as an array (or a hash table) of lists
   - Each element of the array corresponds to a node, and the list associated with each node contains its adjacent nodes.
@@ -39,14 +77,33 @@ Network of node(vertex) and edges(connection)
     C: [A, D]
     D: [B, C]
     ```
-  
+  **Advantage**
+  1. Efficient memory usage it requires only **O(V+E)** space.
+  2. Efficient traversal of neighbors
+  3. Easy to insert and delete edge
+
+  **Disadvantage**
+  1. Slower edge queries. Checking the edge exists between two nodes takes **O(deg(V))**
+  2. Less suitable for dense graph.
+
+
+---
+
 - **Edge List**
   - The edge list representation is a simple and straightforward way to represent a graph using a list of edge
   -  In this representation, each edge of the graph is listed individually, typically with the identifiers or labels of the vertices it connects.
       ```agsl
       [(A, B), (B, C), (C, D), (D, A)]
       ```
+  **Advantage**
+  1. Simplicity: The edge list representation is simple and intuitive.
+  2. Efficient memory usage, Requires **O(E)** space.
+  3. Flexibility: edge list allows easy to addition and removal of edges.
 
+  **Disadvantage**
+  1. Slower edge queries
+  2. Inefficient for certain graph operations like finding neighbors of specific node
+  3. Lack of direct node information
 ---
 
 ### Graph Traversal
@@ -60,3 +117,10 @@ Graph traversal is the process of visiting all the nodes in a graph.
   - This approach is often implemented using a queue.
   - Is level order traversal in terms of tree
   - [BFS traversal code](bfs_traversal.kts)
+
+
+
+### Question for the Graph
+- Check graph is connected or not
+- Check graph contains cycle or not
+- Check graph is bipartite graph
