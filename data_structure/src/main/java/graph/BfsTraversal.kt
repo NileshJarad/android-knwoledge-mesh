@@ -1,9 +1,19 @@
-package ds.graph
+package graph
 
-import ds.graph.BfsTraversal.Companion.GRAPH_VERTEX
+import graph.BfsTraversal.Companion.GRAPH_VERTEX
 import java.util.LinkedList
 import java.util.Queue
 
+/***
+ * BFS (Breadth first search)
+ *  - Go to immediate neighbours first
+ *  - Then go to neighbours of neighbours
+ *  - In-direct Level order traversal from tree traversal
+ *  - Take Queue data structure
+ *      - Print current node
+ *      - Mark current node as visited
+ *      - visit  neighbours of current node
+ */
 fun main() {
     val bfsTraversal = BfsTraversal()
 
