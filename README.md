@@ -13,9 +13,11 @@
 ## Data Structure
 
 1. [Array](data_structure/src/main/java/array/array.md)
-2. [Stack](data_structure/src/main/java/stack/stack.md)
-3. [Tree](data_structure/src/main/java/tree/tree.md)
-4. [Graph](data_structure/src/main/java/graph/graph.md)
+2. [LinkList](data_structure/src/main/java/linklist/linklist.md)
+3. [Recursion](data_structure/src/main/java/recursion/recursion.md)
+4. [Stack](data_structure/src/main/java/stack/stack.md)
+5. [Tree](data_structure/src/main/java/tree/tree.md)
+6. [Graph](data_structure/src/main/java/graph/graph.md)
 
 ---
 
