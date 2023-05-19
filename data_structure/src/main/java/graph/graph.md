@@ -34,16 +34,26 @@ Network of node(vertex) and edges(connection)
   - An undirected graph is a graph where the edges do not have a direction
   - The edges represent a symmetric relationship between vertices. 
   - For example, if vertex A is connected to vertex B, then vertex B is also connected to vertex A.
+  ```agsl
+        A --- B
+  ```
 - **Directed Graph (Digraph)**
   - In Directed graph edges have direction
   - The edges represent asymmetric relationship between vertices, that means A is connected B, does not mean B is connected A.
+  ```agsl
+        A ---> B
+  ```
 - **Un-Weighted Graph**
   - Graph where edge does not have weight or cost associated with it
   - The connections between vertices are considered to have equal importance or distance.
 - **Weighted Graph**
   - A weighted graph is a graph where each edge has an associated weight or cost
   - These weights can represent various quantities, such as distances, costs, or capacities
-
+  - Weights can be positive, negative or zero
+  ```agsl
+        (10)
+    A -------> B
+  ```
 ---
 
 ### Graph representation
@@ -69,17 +79,19 @@ Network of node(vertex) and edges(connection)
 ---
 
 - **Adjacency List**:
-  - An adjacency list represents a graph as an array (or a hash table) of lists
+  - An adjacency list represents a graph as an array (or a hash table or list) of lists
   - Each element of the array corresponds to a node, and the list associated with each node contains its adjacent nodes.
     ```agsl
     A: [B, C, D]
     B: [A, D]
     C: [A, D]
-    D: [B, C]
+    D: [A, B, C]
     ```
+    ![Graph](https://www.plantuml.com/plantuml/dpng/SoWkIImgAStDuIejJarEB4vLS8IpdE0iPpZBXSjHGLSNA0McdC4KKD0PGZb1A8VKl1IWaG00)
+  
   **Advantage**
   1. Efficient memory usage it requires only **O(V+E)** space.
-  2. Efficient traversal of neighbors
+  2. Efficient traversal of neighbors 
   3. Easy to insert and delete edge
 
   **Disadvantage**
