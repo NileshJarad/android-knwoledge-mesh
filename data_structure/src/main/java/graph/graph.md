@@ -120,6 +120,12 @@ Graph traversal is the process of visiting all the nodes in a graph.
   - [BFS traversal code](BfsTraversal.kt)
 
 
+---
+
+### Graph Algorithms
+- **Shortest Path - Dijkstra's Algorithm**
+  - It is Greedy algorithm
+
 
 ### Question for the Graph
 - Check graph is connected or not
