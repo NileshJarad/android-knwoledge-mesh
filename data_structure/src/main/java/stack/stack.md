@@ -32,3 +32,7 @@
 - [Implement stack using list](stack.kt)
 - [Reverse string using stack](reverse_string.kt)
 - [Reverse string word using stack](reverse_string_words.kt)
+- Balancing Bracket
+- Reverse stack without using another stack
+- Sort stack without using another stack
+- Delete intermediate item from stack 
