@@ -86,9 +86,9 @@
    - Executor
    - RxJava
    - Co-routine
-7. [Networking](android/networking/networking.md)
+7. [Networking](android/src/main/kotlin/networking/networking.md)
    - REST API
-   - [HTTP status code](android/networking/networking.md#http-status-code)
+   - [HTTP status code](android/src/main/kotlint /networking/networking.md#http-status-code)
    - Multi-part requests
    - OkHttp
    - Interceptors
