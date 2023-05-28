@@ -59,7 +59,10 @@ Tree is hierarchical (Non-Linear) data structure.
     - Equal value can be put in left or right but not in both
     - In-Order traversal of BST will always sorted
     - Search is faster in **_average_** case **O(log N)**. It depends on height of three (skewed tree)
-- AVL tree
+- AVL tree (Self Balancing Binary tree)
+    - Skewed binary search tree gives birth to AVL
+    - Is a Binary tree
+    - |Height of left tree| - |Height of right tree| = {-1,0,1} --(Balance factor)
 - B tree
 - B+ tree
 - Heap tree
@@ -75,9 +78,8 @@ Tree is hierarchical (Non-Linear) data structure.
 - **Level Order Traversal**
 - [Traversal's code](Traversal.kt)
 
-
-
 ### Question on the tree
+
 - Check if tree is BST
 - Print left view of the tree
 - Print right view of the tree

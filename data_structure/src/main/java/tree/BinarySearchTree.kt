@@ -4,8 +4,13 @@ fun main() {
     val bst = BinarySearchTree()
     val root = bst.createBst(arrayOf(2, 5, 3, 8, 15, 9, 1, 2))
     root?.inOrderTraversal()
+
     val valueToFind = 3
-    print("\n $valueToFind found = ${bst.search(root, valueToFind)}")
+    println("\n $valueToFind found = ${bst.search(root, valueToFind)}")
+
+    val valueToDelete = 15
+    bst.deleteNode(root, valueToDelete)
+    root?.inOrderTraversal()
 }
 
 class BinarySearchTree {
@@ -58,4 +63,45 @@ class BinarySearchTree {
         return false
     }
 
+    fun deleteNode(root: BinaryNode?, value: Int): BinaryNode? {
+        root ?: return null
+        when {
+            value < root.data -> root.left = deleteNode(root.left, value)
+            value > root.data -> root.right = deleteNode(root.right, value)
+            else -> {
+                when {
+                    root.left == null && root.right == null -> {
+                        // No children
+                        return null
+                    }
+
+                    root.left == null -> {
+                        // Single Child left}
+                        return root.right
+                    }
+
+                    root.right == null -> {
+                        // Single Child right
+                        return root.left
+                    }
+
+                    else -> {   //2 Children
+                        val minRight = findMinNode(root.right)
+                        root.data = minRight!!.data
+                        root.right = deleteNode(root.right, minRight.data)
+                    }
+                }
+            }
+        }
+
+        return root
+    }
+
+    private fun findMinNode(root: BinaryNode?): BinaryNode? {
+        var current = root
+        while (current?.left != null) {
+            current = current.left
+        }
+        return current
+    }
 }
