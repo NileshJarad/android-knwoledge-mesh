@@ -18,6 +18,7 @@
 4. [Stack](data_structure/src/main/java/stack/stack.md)
 5. [Tree](data_structure/src/main/java/tree/tree.md)
 6. [Graph](data_structure/src/main/java/graph/graph.md)
+7. 
 
 ---
 
