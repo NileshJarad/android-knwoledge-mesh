@@ -15,9 +15,9 @@ fun main() {
 
 class BinarySearchTree {
 
-    private var root: BinaryNode? = null
+    private var root: BinaryNode<Int>? = null
 
-    fun createBst(data: Array<Int>): BinaryNode? {
+    fun createBst(data: Array<Int>): BinaryNode<Int>? {
         data.forEach {
             root = insert(it, root)
         }
@@ -31,7 +31,7 @@ class BinarySearchTree {
      *  O(h) - height
      *
      */
-    fun insert(value: Int, root: BinaryNode?): BinaryNode {
+    fun insert(value: Int, root: BinaryNode<Int>?): BinaryNode<Int> {
         if (root == null) {
             return BinaryNode(data = value)
         }
@@ -50,7 +50,7 @@ class BinarySearchTree {
      *  O(h) - height
      *
      */
-    fun search(root: BinaryNode?, value: Int): Boolean {
+    fun search(root: BinaryNode<Int>?, value: Int): Boolean {
         root?.let {
             if (it.data == value) {
                 return true
@@ -63,7 +63,7 @@ class BinarySearchTree {
         return false
     }
 
-    fun deleteNode(root: BinaryNode?, value: Int): BinaryNode? {
+    fun deleteNode(root: BinaryNode<Int>?, value: Int): BinaryNode<Int>? {
         root ?: return null
         when {
             value < root.data -> root.left = deleteNode(root.left, value)
@@ -97,7 +97,7 @@ class BinarySearchTree {
         return root
     }
 
-    private fun findMinNode(root: BinaryNode?): BinaryNode? {
+    private fun findMinNode(root: BinaryNode<Int>?): BinaryNode<Int>? {
         var current = root
         while (current?.left != null) {
             current = current.left

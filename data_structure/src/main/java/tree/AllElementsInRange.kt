@@ -10,7 +10,7 @@ fun main() {
 }
 
 
-fun printInRange(root: BinaryNode?, n1: Int, n2: Int) {
+fun printInRange(root: BinaryNode<Int>?, n1: Int, n2: Int) {
     root?.let {
         printInRange(it.left, n1, n2)
         if (it.data in n1..n2) {

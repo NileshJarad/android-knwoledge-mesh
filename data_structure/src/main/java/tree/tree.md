@@ -57,7 +57,7 @@ Tree is hierarchical (Non-Linear) data structure.
     - All node in Left subtree should be less than **Root**
     - All node in Right subtree should be larger than **Root**
     - Equal value can be put in left or right but not in both
-    - In-Order traversal of BST will always sorted
+    - **In-Order traversal of BST will always sorted**
     - Search is faster in **_average_** case **O(log N)**. It depends on height of three (skewed tree)
 - [AVL tree (Self balancing BST)](AVLTree.kt)
     - Skewed binary search tree gives birth to AVL
@@ -80,7 +80,7 @@ Tree is hierarchical (Non-Linear) data structure.
 
 ### Question on the tree
 
-- Check if tree is BST
+- [Check if tree is BST](CheckIsBst.kt)
 - Print left view of the tree
 - Print right view of the tree
 - Print top view of the tree
