@@ -1,7 +1,8 @@
 package tree
 
-class BinaryNode(
-    val data: Int,
-    var left: BinaryNode? = null,
-    var right: BinaryNode? = null
+class BinaryNode<T>(
+    var data: T,
+    var left: BinaryNode<T>? = null,
+    var right: BinaryNode<T>? = null
+    var height: Int = 0
 )

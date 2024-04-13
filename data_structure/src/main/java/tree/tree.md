@@ -51,15 +51,47 @@ Tree is hierarchical (Non-Linear) data structure.
 ## Types of tree
 
 - [Binary tree](BinaryTree.kt)
-- [Binary search tree](BinarySearchTree.kt)
+    - A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the
+      left child and the right child.
+    - Nodes in a binary tree are arranged in such a way that each node can have at most two children.
+    - Binary trees are widely used in computer science for efficient searching and sorting algorithms.
+
+- Complete Binary Tree
+    - A complete binary tree is a binary tree in which all levels are completely filled except possibly the last level,
+      which is filled from left to right.
+    - In a complete binary tree, all nodes are as far left as possible, except possibly for the last level, which is
+      filled from left to right.
+    - Complete binary trees are useful in representing data with heap structures, and they have efficient array-based
+      representations.
+- Full Binary Tree (Proper Binary Tree)
+    - A full binary tree is a binary tree in which every node other than the leaves has two children
+    - In other words, a full binary tree is a binary tree in which every node has either 0 or 2 children, but never 1
+      child.
+    - Full binary trees are used in various applications, such as expression trees and decision trees.
+- Perfect Binary Tree:
+    - A perfect binary tree is a binary tree in which all internal nodes have exactly two children, and all leaf nodes
+      are at the same level
+    - In other words, a perfect binary tree is both full and complete.
+    - Perfect binary trees are rare in practice but are used in some theoretical analyses and algorithms.
+- Balanced Binary Tree
+    - A balanced binary tree is a binary tree in which the height of the two subtrees of any node never differs by more
+      than one.
+    - Balancing ensures that the height of the tree remains logarithmic with respect to the number of nodes, leading to
+      efficient operations such as search, insertion, and deletion.
+    - Balanced binary trees are used in various data structures such as AVL trees, red-black trees, and B-trees.
+
+- [Binary search tree - BST](BinarySearchTree.kt)
     - It is Binary tree.
     - It has special property that left and right of tree should be BST
     - All node in Left subtree should be less than **Root**
     - All node in Right subtree should be larger than **Root**
     - Equal value can be put in left or right but not in both
-    - In-Order traversal of BST will always sorted
+    - **In-Order traversal of BST will always sorted**
     - Search is faster in **_average_** case **O(log N)**. It depends on height of three (skewed tree)
-- AVL tree
+- [AVL tree (Self balancing BST)](AVLTree.kt)
+    - Skewed binary search tree gives birth to AVL
+    - Is a Binary tree
+    - |Height of left tree| - |Height of right tree| = {-1,0,1} --(Balance factor)
 - B tree
 - B+ tree
 - Heap tree
@@ -75,10 +107,9 @@ Tree is hierarchical (Non-Linear) data structure.
 - **Level Order Traversal**
 - [Traversal's code](Traversal.kt)
 
-
-
 ### Question on the tree
-- Check if tree is BST
+
+- [Check if tree is BST](CheckIsBst.kt)
 - Print left view of the tree
 - Print right view of the tree
 - Print top view of the tree

@@ -4,15 +4,20 @@ fun main() {
     val bst = BinarySearchTree()
     val root = bst.createBst(arrayOf(2, 5, 3, 8, 15, 9, 1, 2))
     root?.inOrderTraversal()
+
     val valueToFind = 3
-    print("\n $valueToFind found = ${bst.search(root, valueToFind)}")
+    println("\n $valueToFind found = ${bst.search(root, valueToFind)}")
+
+    val valueToDelete = 15
+    bst.deleteNode(root, valueToDelete)
+    root?.inOrderTraversal()
 }
 
 class BinarySearchTree {
 
-    private var root: BinaryNode? = null
+    private var root: BinaryNode<Int>? = null
 
-    fun createBst(data: Array<Int>): BinaryNode? {
+    fun createBst(data: Array<Int>): BinaryNode<Int>? {
         data.forEach {
             root = insert(it, root)
         }
@@ -26,7 +31,7 @@ class BinarySearchTree {
      *  O(h) - height
      *
      */
-    fun insert(value: Int, root: BinaryNode?): BinaryNode {
+    fun insert(value: Int, root: BinaryNode<Int>?): BinaryNode<Int> {
         if (root == null) {
             return BinaryNode(data = value)
         }
@@ -45,7 +50,7 @@ class BinarySearchTree {
      *  O(h) - height
      *
      */
-    fun search(root: BinaryNode?, value: Int): Boolean {
+    fun search(root: BinaryNode<Int>?, value: Int): Boolean {
         root?.let {
             if (it.data == value) {
                 return true
@@ -58,4 +63,45 @@ class BinarySearchTree {
         return false
     }
 
+    fun deleteNode(root: BinaryNode<Int>?, value: Int): BinaryNode<Int>? {
+        root ?: return null
+        when {
+            value < root.data -> root.left = deleteNode(root.left, value)
+            value > root.data -> root.right = deleteNode(root.right, value)
+            else -> {
+                when {
+                    root.left == null && root.right == null -> {
+                        // No children
+                        return null
+                    }
+
+                    root.left == null -> {
+                        // Single Child left}
+                        return root.right
+                    }
+
+                    root.right == null -> {
+                        // Single Child right
+                        return root.left
+                    }
+
+                    else -> {   //2 Children
+                        val minRight = findMinNode(root.right)
+                        root.data = minRight!!.data
+                        root.right = deleteNode(root.right, minRight.data)
+                    }
+                }
+            }
+        }
+
+        return root
+    }
+
+    private fun findMinNode(root: BinaryNode<Int>?): BinaryNode<Int>? {
+        var current = root
+        while (current?.left != null) {
+            current = current.left
+        }
+        return current
+    }
 }

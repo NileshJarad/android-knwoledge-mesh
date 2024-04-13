@@ -2,27 +2,27 @@ package tree
 
 import java.util.*
 
-fun BinaryNode.postOrderTraversal() {
+fun <T> BinaryNode<T>.postOrderTraversal() {
     this.left?.postOrderTraversal()
     this.right?.postOrderTraversal()
     print("$data - ")
 }
 
 
-fun BinaryNode.inOrderTraversal() {
+fun <T> BinaryNode<T>.inOrderTraversal() {
     this.left?.inOrderTraversal()
     print("$data - ")
     this.right?.inOrderTraversal()
 }
 
-fun BinaryNode.preOrderTraversal() {
+fun <T> BinaryNode<T>.preOrderTraversal() {
     print("$data - ")
     this.left?.preOrderTraversal()
     this.right?.preOrderTraversal()
 }
 
-fun BinaryNode.levelOrder() {
-    val queue = LinkedList<BinaryNode>()
+fun <T> BinaryNode<T>.levelOrder() {
+    val queue = LinkedList<BinaryNode<T>>()
     queue.push(this)
     while (!queue.isEmpty()) {
         val pop = queue.pop()
