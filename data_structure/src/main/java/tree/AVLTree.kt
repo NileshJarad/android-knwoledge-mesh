@@ -31,13 +31,13 @@ fun main() {
 }
 
 class AVLTree {
-    var root: BinaryNode? = null
+    var root: BinaryNode<Int>? = null
 
-    private fun balanceFactor(node: BinaryNode?): Int {
+    private fun balanceFactor(node: BinaryNode<Int>?): Int {
         return node?.left?.heightOfNode() ?: (0 - (node?.right?.heightOfNode() ?: 0))
     }
 
-    fun insert(value: Int, rootNode: BinaryNode?): BinaryNode {
+    fun insert(value: Int, rootNode: BinaryNode<Int>?): BinaryNode<Int> {
         if (rootNode == null) {
             return BinaryNode(data = value)
         }
@@ -56,11 +56,11 @@ class AVLTree {
     }
 }
 
-fun BinaryNode?.calculateHeight(): Int {
+fun BinaryNode<Int>?.calculateHeight(): Int {
     this?.height = maxOf(this?.left.heightOfNode(), this?.right.heightOfNode()) + 1
     return this?.height ?: 0
 }
 
-fun BinaryNode?.heightOfNode(): Int {
+fun BinaryNode<Int>?.heightOfNode(): Int {
     return this?.height ?: 0
 }
