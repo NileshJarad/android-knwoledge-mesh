@@ -17,6 +17,7 @@
 3. [Recursion](data_structure/src/main/java/recursion/recursion.md)
 4. [Stack](data_structure/src/main/java/stack/stack.md)
 5. [Tree](data_structure/src/main/java/tree/tree.md)
+6. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
 6. [Graph](data_structure/src/main/java/graph/graph.md)
 7. 
 
