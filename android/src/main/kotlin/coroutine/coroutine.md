@@ -2,6 +2,17 @@
 
 Coroutines are a powerful feature in modern programming languages that allow for asynchronous and concurrent programming
 
+>A coroutine is an instance of suspendable computation. It is conceptually similar to a thread, in the sense that it takes a block of code to run that works concurrently with the rest of the code. However, a coroutine is not bound to any particular thread. It may suspend its execution in one thread and resume in another one.
+
+Coroutines are a lightweight alternative to threads.
+
+
+## Suspended function
+>Suspended function is function that could be started, paused, and resume. One of the most important points to remember about the suspend function is that they are only allowed to be called from a coroutine or another suspend function
+ 
+When a coroutine is suspended, that thread is free for other coroutines. The continuation of the coroutine doesn't have to be on the same thread. Here we conclude that we can simultaneously run many coroutines with a small number of threads.
+
+
 ## Coroutine Builder
 
 ### launch
@@ -147,6 +158,8 @@ Coroutines are a powerful feature in modern programming languages that allow for
 
 - It defines a context in which coroutines are executed and provides a way to manage the lifecycle of coroutines.
 - Coroutine scope is typically used to launch coroutines and ensure their proper cancellation.
+- CoroutineScope is an interface with only one property `coroutineContext`
+- Every **coroutine builder** is extension of **CoroutineScope**
 - **CoroutineScope** has two main builders `launch` and `async`
 - To create a coroutine scope, you can use the `coroutineScope` or `supervisorScope` function
 - [Coroutine Scope example](CoroutineScopeExample.kt)
