@@ -108,6 +108,7 @@
 9. Android Jetpack
 10. Compose
 11. Kotlin
+    - [Basics](android/src/main/kotlin/kotlin_fundamentals/basics.md)
     - Functions
         - Higher-order functions
         - [Scope functions](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md)
@@ -119,11 +120,12 @@
         - Lambda Functions
         - Extension function
         - Infix functions
-    - Data class
-        - Data class
-        - Sealed Class
-        - Enum class
-      
+    - [Class](android/src/main/kotlin/kotlin_fundamentals/classes.md)
+        - [Data class](android/src/main/kotlin/kotlin_fundamentals/classes.md#data-class)
+        - [Sealed Class](android/src/main/kotlin/kotlin_fundamentals/classes.md#sealed-class)
+        - [Enum class](android/src/main/kotlin/kotlin_fundamentals/classes.md#enum-class)
+        - [value class](android/src/main/kotlin/kotlin_fundamentals/classes.md#value-class)
+
 
 12. [Coroutine](android/src/main/kotlin/coroutine/coroutine.md)
 
