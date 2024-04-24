@@ -34,9 +34,15 @@
 
 ---
 
+## Object oriented design
+
+1. [Class Diagram to UML representation](ood/class_uml_relationship.md)
+2. [Usecase diagram](ood/usecase.md)
+
+
 ## Design patterns
 
-[Class Diagram to UML representation](design_patterns/class_uml/class_uml_relationship.md)
+---
 
 ### Creational design pattern
 
