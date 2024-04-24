@@ -1,14 +1,15 @@
 # Android-knowledge-mesh
 
 ## GIT
-1. [Clone](/git/git.md#clone)
-2. [Status](/git/git.md#status)
-3. [Checkout](/git/git.md#checkout)
-4. [Changes and Commit](/git/git.md#changes-and-commit)
-5. [Push](/git/git.md#Push)
-6. [Log](/git/git.md#Log)
-7. [History re-write](/git/git.md#History-re-write)
-8. [Clean up files](/git/git.md#Clean-up-files)
+
+1. [Clone](git/git.md#clone)
+2. [Status](git/git.md#status)
+3. [Checkout](git/git.md#checkout)
+4. [Changes and Commit](git/git.md#changes-and-commit)
+5. [Push](git/git.md#push)
+6. [Log](git/git.md#log)
+7. [History re-write](git/git.md#history-re-write)
+8. [Clean up files](git/git.md#clean-up-files)
 
 ## Data Structure
 
@@ -19,7 +20,7 @@
 5. [Tree](data_structure/src/main/java/tree/tree.md)
 6. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
 6. [Graph](data_structure/src/main/java/graph/graph.md)
-7. 
+7.
 
 ---
 
@@ -35,7 +36,7 @@
 
 ## Design patterns
 
-[Class Diagram to UML representation](design_patterns/class_uml/class_uml_relationship.md) 
+[Class Diagram to UML representation](design_patterns/class_uml/class_uml_relationship.md)
 
 ### Creational design pattern
 
@@ -46,8 +47,10 @@
 5. [Prototype](design_patterns/creational/prototype/prototype.md)
 
 ### Behavioral design pattern
+
 1. [Strategy](design_patterns/behavioral/strategy/strategy.md)
 2. [Observer](design_patterns/behavioral/observer/observer.md)
+
 ---
 
 ## System Design
@@ -60,47 +63,69 @@
     3. [Code](system_design/lld/library_management/code.md)
 
 ---
+
 ## Android
+
 1. Android Component
-   - Activity
-   - Service
-   - Broadcast Receiver
-   - Content Provider
+    - Activity
+    - Service
+    - Broadcast Receiver
+    - Content Provider
 2. Intent
-   - Types of intent
-   - Intent Filter
+    - Types of intent
+    - Intent Filter
 3. Launch mode
-   - Standard
-   - Single Top
-   - Single Task
-   - Single Instance
+    - Standard
+    - Single Top
+    - Single Task
+    - Single Instance
 4. Fragments
-   - Fragment Lifecycle
+    - Fragment Lifecycle
 5. Storage
-   - Shared Preference
-   - Database
-   - File
+    - Shared Preference
+    - Database
+    - File
 6. Threading
-   - Thread
-   - Handler
-   - Looper
-   - Message Queue
-   - Executor
-   - RxJava
-   - Co-routine
+    - Thread
+    - Handler
+    - Looper
+    - Message Queue
+    - Executor
+    - RxJava
+    - Co-routine
 7. [Networking](android/src/main/kotlin/networking/networking.md)
-   - REST API
-   - [HTTP status code](android/src/main/kotlin/networking/networking.md#http-status-code)
-   - Multi-part requests
-   - OkHttp
-   - Interceptors
-   - Caching
-   - Socket connection
-   - Server Side Event (SSE)
-   - Auth refresh tokens
-8. Security 
-   - SSL pining  
+    - REST API
+    - [HTTP status code](android/src/main/kotlin/networking/networking.md#http-status-code)
+    - Multi-part requests
+    - OkHttp
+    - Interceptors
+    - Caching
+    - Socket connection
+    - Server Side Event (SSE)
+    - Auth refresh tokens
+8. Security
+    - SSL pining
 9. Android Jetpack
 10. Compose
-11. [Coroutine](android/src/main/kotlin/coroutine/coroutine.md)
+11. Kotlin
+    - [Basics](android/src/main/kotlin/kotlin_fundamentals/basics.md)
+    - Functions
+        - Higher-order functions
+        - [Scope functions](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md)
+            - [let](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md#let)
+            - [run](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md#run)
+            - [with](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md#with)
+            - [apply](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md#apply)
+            - [also](android/src/main/kotlin/kotlin_fundamentals/scope_functions.md#also)
+        - Lambda Functions
+        - Extension function
+        - Infix functions
+    - [Class](android/src/main/kotlin/kotlin_fundamentals/classes.md)
+        - [Data class](android/src/main/kotlin/kotlin_fundamentals/classes.md#data-class)
+        - [Sealed Class](android/src/main/kotlin/kotlin_fundamentals/classes.md#sealed-class)
+        - [Enum class](android/src/main/kotlin/kotlin_fundamentals/classes.md#enum-class)
+        - [value class](android/src/main/kotlin/kotlin_fundamentals/classes.md#value-class)
+
+
+12. [Coroutine](android/src/main/kotlin/coroutine/coroutine.md)
 
