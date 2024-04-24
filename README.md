@@ -34,9 +34,15 @@
 
 ---
 
+## Object oriented design
+
+1. [Class Diagram to UML representation](ood/class_uml_relationship.md)
+2. [Usecase diagram](ood/usecase.md)
+
+
 ## Design patterns
 
-[Class Diagram to UML representation](design_patterns/class_uml/class_uml_relationship.md)
+---
 
 ### Creational design pattern
 
@@ -61,6 +67,11 @@
     1. [Requirement](system_design/lld/library_management/requirment.md)
     2. [Use case and class diagram](system_design/lld/library_management/usercase_class_diagram.md)
     3. [Code](system_design/lld/library_management/code.md)
+2. Library Management
+   1. [Requirement](system_design/lld/car_rental_system/requirement.md)
+   2. [Use case and class diagram](system_design/lld/car_rental_system/usecase_class_diagram.md)
+   3. [Code](system_design/lld/car_rental_system/code.md)
+   
 
 ---
 
