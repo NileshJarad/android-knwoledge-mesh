@@ -39,23 +39,47 @@
 1. [Class Diagram to UML representation](ood/class_uml_relationship.md)
 2. [Usecase diagram](ood/usecase.md)
 
-
 ## Design patterns
 
 ---
 
 ### Creational design pattern
 
-1. [Singleton](design_patterns/creational/singletone/singletone.md)
-2. [Factory-method](design_patterns/creational/factory/factory_method.md)
-3. [Abstract-factory](design_patterns/creational/abstract_factory/abstract_factory.md)
-4. [Builder](design_patterns/creational/builder/builder.md)
-5. [Prototype](design_patterns/creational/prototype/prototype.md)
+These patterns are used to provide a mechanism for creating objects in a specific situation without revealing the
+creation method.
+
+1. **[Singleton](design_patterns/creational/singletone/singletone.md)** Lets you ensure that a class has only one
+   instance,
+   while providing a global access point to this instance.
+2. **[Factory-method](design_patterns/creational/factory/factory_method.md)**  Provides an interface for creating
+   objects in
+   a superclass, but allows subclasses to alter the type of objects that will be created.
+3. **[Abstract-factory](design_patterns/creational/abstract_factory/abstract_factory.md)** Lets you produce families of
+   related objects without specifying their concrete classes.
+4. **[Builder](design_patterns/creational/builder/builder.md)** Lets you construct complex objects step by step. The
+   pattern
+   allows you to produce different types and representations of an object using the same construction code.
+5. **[Prototype(Clone)](design_patterns/creational/prototype/prototype.md)** Lets you copy existing objects without
+   making
+   your code dependent on their classes.
+
+### Structural design patterns
+
+These patterns are concerned with class/object composition and relationships between objects. They let us add new
+functionalities to objects so that restructuring some parts of the system does not affect the rest. Hence, when some
+parts of the structure change, the entire system does not need to change
 
 ### Behavioral design pattern
 
-1. [Strategy](design_patterns/behavioral/strategy/strategy.md)
-2. [Observer](design_patterns/behavioral/observer/observer.md)
+These patterns are concerned with communication between objects in a system. They streamline communication
+and ensure that the information is synchronized objects
+
+1. **[Strategy](design_patterns/behavioral/strategy/strategy.md)** Lets you define a family of algorithms, put each of
+   them into a separate class, and make their objects interchangeable.
+2. **[Observer](design_patterns/behavioral/observer/observer.md)** Lets you define a subscription mechanism to notify
+   multiple objects about any events that happen to the object they're observing.
+3. **[Iterator](design_patterns/behavioral/observer/observer.md)** Lets you traverse elements of a collection without
+   exposing its underlying representation (list, stack, tree, etc.).
 
 ---
 
@@ -68,10 +92,9 @@
     2. [Use case and class diagram](system_design/lld/library_management/usercase_class_diagram.md)
     3. [Code](system_design/lld/library_management/code.md)
 2. Library Management
-   1. [Requirement](system_design/lld/car_rental_system/requirement.md)
-   2. [Use case and class diagram](system_design/lld/car_rental_system/usecase_class_diagram.md)
-   3. [Code](system_design/lld/car_rental_system/code.md)
-   
+    1. [Requirement](system_design/lld/car_rental_system/requirement.md)
+    2. [Use case and class diagram](system_design/lld/car_rental_system/usecase_class_diagram.md)
+    3. [Code](system_design/lld/car_rental_system/code.md)
 
 ---
 
