@@ -1,0 +1,73 @@
+# Iterator Pattern
+
+- ** behavioral design pattern that lets you traverse elements of a collection without exposing its underlying
+  representation**
+
+### Steps to create observer method
+
+1. **Iterator interface** : Declares operation required to traversing collection
+2. **Concrete Iterator** : Implementation of specific algorithm for traversing collection.
+3. **Iterable Interface** : Declares the methods for getting iterators compatible with collection. Return types of the
+   method must be `Iterator` interface
+4. **Concrete Collection** : Implements method to return iterator instance when client requests
+
+### UML
+
+[PlantUML for Strategy Pattern](https://www.plantuml.com/plantuml/uml/XT31Ii0m383XUvuYn-smFi0ePU1LyE0JT5scbQs5D1j8tRlhS9c81s_bxnTeCnJnBDkwmDDOY7TYj1_6u4DEWKb8Apnluni5mOxZowjq3lMcntoT2W24nPU25ww07UwUVqIFZx68rLa7WFEMq4-JfaPjZvhQRyIqvft-TobBdDyrbgP5E01Y4kBP1xgvjNTphWAUm_hIfeL3V_Dd5nL-qsgCEKu_K9g-Lla9)
+
+![Alt text](https://www.plantuml.com/plantuml/png/TOuzoiCm38PtdKBZzmtn0K88WKvPklK0RghyWEqKMu62wxit868QJ4UzUjwVBh3sl5a3FPFNl7fitbM5bzKDdfYoMcDlduOiEGx2tWqLhAW5AxdABzFC2h-uMw000B0u9Z_gWVApQRBMjX4GnytXH7p4_Vr30XYC3g4O4A6aQyn3eb8gGIfhz-UlsYkzUA-KUzP1RaXGRf2W26Uhb9xjnv2Et6EpvWC0)
+
+
+---
+
+### kotlin code
+
+Iterator interface
+```kotlin
+interface Iterator<E>{
+    fun hasNext() : Boolean
+    fun next() : E
+}
+```
+
+Concrete Iterator
+```kotlin
+private class ListIterator : Iterator<E> {
+    
+    fun hasNext() : Boolean{
+        
+    }
+    fun next() : E{
+        
+    }
+}
+```
+
+Iterable interface
+```kotlin
+interface Iterable<E>{
+    fun iterator() : Iterator<E>
+    fun add(item : E)
+}
+```
+
+Concrete Iterable
+```kotlin
+private class OwnList<E> : Iterable<E> {
+    val list = mutableListOf<E>()
+    fun hasNext() : Boolean{
+    }
+    fun iterator() : Iterator<E>{
+        
+    }
+    fun add(item : E){
+        list.add(item)
+    }
+}
+```
+
+Client code
+```kotlin
+val ownList = OwnList<Int>()
+ownList.iterator()
+```

@@ -78,6 +78,8 @@ and ensure that the information is synchronized objects
    them into a separate class, and make their objects interchangeable.
 2. **[Observer](design_patterns/behavioral/observer/observer.md)** Lets you define a subscription mechanism to notify
    multiple objects about any events that happen to the object they're observing.
+3. **[Iterator](design_patterns/behavioral/observer/observer.md)** Lets you traverse elements of a collection without
+   exposing its underlying representation (list, stack, tree, etc.).
 
 ---
 
