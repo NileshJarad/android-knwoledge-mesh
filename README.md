@@ -11,6 +11,12 @@
 7. [History re-write](git/git.md#history-re-write)
 8. [Clean up files](git/git.md#clean-up-files)
 
+
+## Algorithm 
+1. Time complexity 
+2. [How to Avoid the TLE (Time Limit Exceeded)](./data_structure/src/main/java/algorithms/avoid_tle.md)
+
+
 ## Data Structure
 
 1. [Array](data_structure/src/main/java/array/array.md)
