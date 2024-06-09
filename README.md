@@ -30,6 +30,16 @@
 
 ---
 
+## Object-Oriented Principals (OOPS)
+1. [Class and object](oops_principal/oops.md#clas-and-object)
+2. [Encapsulation](oops_principal/oops.md#encapsulation)
+3. [Abstraction](oops_principal/oops.md#abstraction)
+4. [Inheritance](oops_principal/oops.md#inheritance)
+5. [Polymorphism](oops_principal/oops.md#polymorphism)
+
+
+---
+
 ## SOLID Principal
 
 1. [Single Responsibility Principal](solid_principal/single_responsibility_principal.md)
