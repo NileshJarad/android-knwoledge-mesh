@@ -107,10 +107,14 @@ and ensure that the information is synchronized objects
     1. [Requirement](system_design/lld/library_management/requirment.md)
     2. [Use case and class diagram](system_design/lld/library_management/usercase_class_diagram.md)
     3. [Code](system_design/lld/library_management/code.md)
-2. Library Management
+2. Car Rental Management
     1. [Requirement](system_design/lld/car_rental_system/requirement.md)
     2. [Use case and class diagram](system_design/lld/car_rental_system/usecase_class_diagram.md)
     3. [Code](system_design/lld/car_rental_system/code.md)
+3. Parking Lot
+   1. [Requirement](system_design/lld/parking_lot/requirement.md)
+   2. [Usecase and Class diagram](system_design/lld/parking_lot/usecase_class_diagram.md)
+   3. [Code](system_design/lld/parking_lot/code.md)
 
 ---
 
