@@ -22,11 +22,13 @@
 1. [Array](data_structure/src/main/java/array/array.md)
 2. [LinkList](data_structure/src/main/java/linklist/linklist.md)
 3. [Recursion](data_structure/src/main/java/recursion/recursion.md)
+4. [HashTable - (Hashing)](data_structure/src/main/java/hashing/hasshing.md)
 4. [Stack](data_structure/src/main/java/stack/stack.md)
 5. [Tree](data_structure/src/main/java/tree/tree.md)
 6. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
-6. [Graph](data_structure/src/main/java/graph/graph.md)
-7.
+7. [Graph](data_structure/src/main/java/graph/graph.md)
+8. **Java Collections**
+   1. [HashMap](data_structure/src/main/java/collections/hashmap.md)
 
 ---
 
