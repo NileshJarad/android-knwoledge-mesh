@@ -37,7 +37,7 @@ Returns a bit-wise AND of two integers. Each bit of the result is 1 if both corr
 
 ---
 
-### AND (|)
+### OR (|)
 
 Returns a bit-wise OR of two integers. Each bit of the result is 0 if both corresponding bits of the operands are 0;
   otherwise, it's 1.
