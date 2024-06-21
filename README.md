@@ -20,6 +20,7 @@
 ## Data Structure
 
 1. [Array](data_structure/src/main/java/array/array.md)
+2. [Bitwise Operator](data_structure/src/main/java/bit_manipulation/bitwise_operator.md)
 2. [LinkList](data_structure/src/main/java/linklist/linklist.md)
 3. [Recursion](data_structure/src/main/java/recursion/recursion.md)
 4. [HashTable - (Hashing)](data_structure/src/main/java/hashing/hasshing.md)
