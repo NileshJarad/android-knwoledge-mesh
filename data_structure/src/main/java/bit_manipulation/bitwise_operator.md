@@ -35,6 +35,12 @@ Returns a bit-wise AND of two integers. Each bit of the result is 1 if both corr
 | 1         | 1         | 1      |
 
 
+**Note: '&' is useful in finding mod value** 
+
+    9 % 10 == 9 & 9
+    9 & 3) == 9 % 4
+
+
 ---
 
 ### OR (|)
@@ -95,7 +101,7 @@ Returns a bit-wise OR of two integers. Each bit of the result is 0 if both corre
 **Example 2**
 > 1000 << 2 = 100000 (32)
 
- **Note: Left shift by 1 means multiply by 2**
+ **Note: Left shift by 1 mean multiply by 2**
 
 ---
 
