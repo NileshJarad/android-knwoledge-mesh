@@ -38,7 +38,7 @@ Returns a bit-wise AND of two integers. Each bit of the result is 1 if both corr
 **Note: '&' is useful in finding mod value** 
 
     9 % 10 == 9 & 9
-    9 & 3) == 9 % 4
+    9 & 3 == 9 % 4
 
 
 ---
