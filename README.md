@@ -17,19 +17,24 @@
 2. [How to Avoid the TLE (Time Limit Exceeded)](./data_structure/src/main/java/algorithms/avoid_tle.md)
 
 
+## Sorting
+1. **[Selection sort](data_structure/src/main/java/sorting/selection_sort.md)** - Find the minimum element in the unsorted portion of the array and swap it with the first unsorted element. 
+2. **[Bubble sort](data_structure/src/main/java/sorting/bubble_sort.md)** - comparing adjacent pairs of elements and swapping them if they are in the wrong order. After each pass, the largest unsorted element is placed in its correct position
+2. **[Insertion sort](data_structure/src/main/java/sorting/insertion_sort.md)** - Build up a sorted sub-array from left to right by inserting each new element into its correct position in the sub-array. Repeat until the array is fully sorted.
+
 ## Data Structure
 
 1. [Array](data_structure/src/main/java/array/array.md)
 2. [Bitwise Operator](data_structure/src/main/java/bit_manipulation/bitwise_operator.md)
-2. [LinkList](data_structure/src/main/java/linklist/linklist.md)
-3. [Recursion](data_structure/src/main/java/recursion/recursion.md)
-4. [HashTable - (Hashing)](data_structure/src/main/java/hashing/hasshing.md)
-4. [Stack](data_structure/src/main/java/stack/stack.md)
-5. [Tree](data_structure/src/main/java/tree/tree.md)
-6. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
-7. [Graph](data_structure/src/main/java/graph/graph.md)
-8. **Java Collections**
-   1. [HashMap](data_structure/src/main/java/collections/hashmap.md)
+3. [LinkList](data_structure/src/main/java/linklist/linklist.md)
+4. [Recursion](data_structure/src/main/java/recursion/recursion.md)
+5. [HashTable - (Hashing)](data_structure/src/main/java/hashing/hasshing.md)
+6. [Stack](data_structure/src/main/java/stack/stack.md)
+7. [Tree](data_structure/src/main/java/tree/tree.md)
+8. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
+9. [Graph](data_structure/src/main/java/graph/graph.md)
+10. **Java Collections**
+    1. [HashMap](data_structure/src/main/java/collections/hashmap.md)
 
 ---
 
