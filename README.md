@@ -30,10 +30,11 @@
 4. [Recursion](data_structure/src/main/java/recursion/recursion.md)
 5. [HashTable - (Hashing)](data_structure/src/main/java/hashing/hasshing.md)
 6. [Stack](data_structure/src/main/java/stack/stack.md)
-7. [Tree](data_structure/src/main/java/tree/tree.md)
-8. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
-9. [Graph](data_structure/src/main/java/graph/graph.md)
-10. **Java Collections**
+7. [Queue](data_structure/src/main/java/queue/queue.md)
+8. [Tree](data_structure/src/main/java/tree/tree.md)
+9. [Heap](data_structure/src/main/java/heap_priority_queue/heap.md)
+10. [Graph](data_structure/src/main/java/graph/graph.md)
+11. **Java Collections**
     1. [HashMap](data_structure/src/main/java/collections/hashmap.md)
 
 ---

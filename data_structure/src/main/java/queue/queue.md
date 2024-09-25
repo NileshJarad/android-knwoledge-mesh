@@ -1,22 +1,17 @@
-# Stack
+# Queue
 
-- Stack data structure which allow Last In Fist Out (LIFO)
-- All the operation made at one end called top of the stack (same end)
+- Stack data structure which allow Last In Fist Out (FIFO)
+- Insertion the operation made at one end and remove operation made at front
 
-### Operation of stack
-- **Push** - Push item on the top
-- **Pop** - Remove item from top
-- **Peek/Top** - Return top element of the stack without removing it
-- **isEmpty** - checks if stack is empty or not
+### Operation of Queue
+- **Enqueue** - The enqueue operation adds an element to the rear of the queue.
+- **Dequeue** - The dequeue operation removes the element from the front of the queue
+
 
 ### Application of stack
-- Reverse the arithmetic operation
-- Syntax parsing
-- Recursion
-- Undo and Redo
 
 
-### Time complexity 
+### Time complexity
 
 
 | Operation | Time complexity |
